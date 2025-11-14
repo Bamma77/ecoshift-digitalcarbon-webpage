@@ -1,4 +1,4 @@
-﻿// ---- 상수 (단순 가늠값) ----
+// ---- 상수 (단순 가늠값) ----
 const EMAIL_PER_G = 4; // g CO2 / email
 const SNS_PER_HOUR_G = 36; // g CO2 / hour
 const CAR_PER_KM_G = 120; // g CO2 / km
@@ -12,11 +12,6 @@ const emailRange = document.getElementById("emailRange");
 const emailInput = document.getElementById("emailInput");
 const snsRange = document.getElementById("snsRange");
 const snsInput = document.getElementById("snsInput");
-
-const heroMeter = document.getElementById("heroMeter");
-const heroMeterText = document.getElementById("heroMeterText");
-const heroEmailVal = document.getElementById("heroEmailVal");
-const heroSnsVal = document.getElementById("heroSnsVal");
 
 const calcMeter = document.getElementById("calcMeter");
 const calcTotalText = document.getElementById("calcTotalText");
@@ -39,12 +34,6 @@ function updateCalculator() {
   const yearKg = (totalG * 365) / 1000;
 
   const meterPct = Math.min(100, Math.round((totalG / 500) * 100));
-
-  // 히어로 카드 반영
-  heroMeter.style.width = meterPct + "%";
-  heroMeterText.textContent = `오늘 ${totalG.toFixed(0)} g CO₂e (추정)`;
-  heroEmailVal.textContent = emailCO2.toFixed(0);
-  heroSnsVal.textContent = snsCO2.toFixed(0);
 
   // 계산기 카드 반영
   calcMeter.style.width = meterPct + "%";
