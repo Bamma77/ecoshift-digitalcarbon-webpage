@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -93,7 +93,7 @@
                 <div class="divider-2"></div>
             </div>
 
-            <!-- ===== MENU 1: 디지털 탄소 소개 + 자가검진 ===== -->
+            <!-- ===== STEP 1: 디지털 탄소 소개 ===== -->
             <section id="intro" class="section">
                 <div class="max-width">
                     <h2 class="section-title">디지털 탄소란?</h2>
@@ -206,227 +206,231 @@
                     <div class="divider"></div>
 
                     <!-- 자가검진 체크리스트 -->
-                    <div id="checklist" class="check-grid">
-                        <!-- 체크박스들 -->
-                        <div>
-                            <h3 class="section-title" style="font-size: 30px; margin-bottom: 4px">
-                                자가검진 체크리스트
-                            </h3>
-                            <p class="section-desc" style="margin-bottom: 10px">
-                                아래 항목 중 실천하고 있는 것을 선택해 보세요. 체크 개수에 따라
-                                진행도와 간단한 피드백을 보여드립니다.
-                            </p>
+                    <section id="checklist" class="section">
+                        <div class="check-grid">
+                            <!-- 체크박스들 -->
+                            <div>
+                                <h3 class="section-title" style="font-size: 30px; margin-bottom: 4px">
+                                    자가검진 체크리스트
+                                </h3>
+                                <p class="section-desc" style="margin-bottom: 10px">
+                                    아래 항목 중 실천하고 있는 것을 선택해 보세요. 체크 개수에 따라
+                                    진행도와 간단한 피드백을 보여드립니다.
+                                </p>
 
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">불필요한 메일함 정리를 주기적으로 한다.</div>
-                                    <div class="check-hint">
-                                        오래된 메일과 대량 광고 메일을 삭제하면 저장용량과 백업 에너지를 함께 줄일 수 있습니다.
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">불필요한 메일함 정리를 주기적으로 한다.</div>
+                                        <div class="check-hint">
+                                            오래된 메일과 대량 광고 메일을 삭제하면 저장용량과 백업 에너지를 함께 줄일 수 있습니다.
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        대용량 파일은 압축하거나 링크로 공유한다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            대용량 파일은 압축하거나 링크로 공유한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            전송 용량을 줄이면 네트워크 에너지 사용량이 줄어듭니다.
+                                        </div>
                                     </div>
-                                    <div class="check-hint">
-                                        전송 용량을 줄이면 네트워크 에너지 사용량이 줄어듭니다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">동영상 자동재생 기능을 꺼 두었다.</div>
+                                        <div class="check-hint">
+                                            원치 않는 스트리밍을 막아 불필요한 데이터 전송을 줄입니다.
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">동영상 자동재생 기능을 꺼 두었다.</div>
-                                    <div class="check-hint">
-                                        원치 않는 스트리밍을 막아 불필요한 데이터 전송을 줄입니다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            스트리밍 화질을 상황에 맞게 낮춰 사용한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            이동 중에는 낮은 해상도만으로도 충분한 경우가 많습니다.
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        스트리밍 화질을 상황에 맞게 낮춰 사용한다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            사용하지 않는 앱의 알림과 백그라운드 실행을 껐다.
+                                        </div>
+                                        <div class="check-hint">
+                                            백그라운드 통신과 대기 전력을 함께 줄일 수 있습니다.
+                                        </div>
                                     </div>
-                                    <div class="check-hint">
-                                        이동 중에는 낮은 해상도만으로도 충분한 경우가 많습니다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            클라우드/드라이브에 쌓인 오래된 파일을 정리한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            저장 공간과 백업 용량을 줄여 데이터센터의 에너지 사용에 기여합니다.
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        사용하지 않는 앱의 알림과 백그라운드 실행을 껐다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            밤에는 PC/노트북/모니터 전원을 완전히 끈다.
+                                        </div>
+                                        <div class="check-hint">
+                                            대기전력도 꾸준히 누적되기 때문에 습관 하나만으로 절감 효과가 있습니다.
+                                        </div>
                                     </div>
-                                    <div class="check-hint">
-                                        백그라운드 통신과 대기 전력을 함께 줄일 수 있습니다.
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            SNS 사용 시간을 스스로 정해서 관리한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            디지털 웰빙과 탄소 절감, 두 가지 목표에 모두 도움이 됩니다.
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        클라우드/드라이브에 쌓인 오래된 파일을 정리한다.
-                                    </div>
-                                    <div class="check-hint">
-                                        저장 공간과 백업 용량을 줄여 데이터센터의 에너지 사용에 기여합니다.
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        밤에는 PC/노트북/모니터 전원을 완전히 끈다.
-                                    </div>
-                                    <div class="check-hint">
-                                        대기전력도 꾸준히 누적되기 때문에 습관 하나만으로 절감 효과가 있습니다.
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" class="check" />
-                                <div>
-                                    <div class="check-label">
-                                        SNS 사용 시간을 스스로 정해서 관리한다.
-                                    </div>
-                                    <div class="check-hint">
-                                        디지털 웰빙과 탄소 절감, 두 가지 목표에 모두 도움이 됩니다.
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
+                                </label>
+                            </div>
 
-                        <!-- 진행도/결과 카드 -->
-                        <div class="card">
-                            <div class="check-meter-wrap">
-                                <div class="check-meter-label">진행도</div>
-                                <div class="check-meter">
-                                    <div id="checkMeterFill" class="check-meter-fill"></div>
-                                </div>
-                            </div>
-                            <div class="check-stats">
-                                <div class="stat">
-                                    <div class="stat-label">체크 개수</div>
-                                    <div class="stat-value">
-                                        <span id="checkCount">0</span>
-                                        <span class="stat-unit">/ 8</span>
+                            <!-- 진행도/결과 카드 -->
+                            <div class="card">
+                                <div class="check-meter-wrap">
+                                    <div class="check-meter-label">진행도</div>
+                                    <div class="check-meter">
+                                        <div id="checkMeterFill" class="check-meter-fill"></div>
                                     </div>
                                 </div>
-                                <div class="stat">
-                                    <div class="stat-label">영향 점수</div>
-                                    <div class="stat-value">
-                                        <span id="checkScore">0</span>
-                                        <span class="stat-unit">점</span>
+                                <div class="check-stats">
+                                    <div class="stat">
+                                        <div class="stat-label">체크 개수</div>
+                                        <div class="stat-value">
+                                            <span id="checkCount">0</span>
+                                            <span class="stat-unit">/ 8</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-label">영향 점수</div>
+                                        <div class="stat-value">
+                                            <span id="checkScore">0</span>
+                                            <span class="stat-unit">점</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-label">실천률</div>
+                                        <div class="stat-value">
+                                            <span id="checkPct">0</span>
+                                            <span class="stat-unit">%</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="stat">
-                                    <div class="stat-label">실천률</div>
-                                    <div class="stat-value">
-                                        <span id="checkPct">0</span>
-                                        <span class="stat-unit">%</span>
-                                    </div>
+                                <div id="checkSummary" class="check-summary">
+                                    아직 체크가 없습니다. 오늘 실천할 수 있는 습관부터 하나 골라볼까요?
                                 </div>
-                            </div>
-                            <div id="checkSummary" class="check-summary">
-                                아직 체크가 없습니다. 오늘 실천할 수 있는 습관부터 하나 골라볼까요?
                             </div>
                         </div>
-                    </div>
                 </div>
             </section>
 
             <div class="divider"></div>
 
-            <div id="calculator" class="home-calc">
-                <h2 class="section-title">디지털 탄소 계산기</h2>
-                <p class="section-desc">
-                    하루 이메일 발송량과 SNS 사용 시간을 입력하면, 오늘과 1년 기준 디지털
-                    탄소 배출량을 단순 추정해 보여줍니다. (수치는 교육용 예시입니다.)
-                </p>
+            <!-- 디지털 탄소 계산기 -->
+            <section id="calculator" class="section">
+                <div class="home-calc">
+                    <h2 class="section-title">디지털 탄소 계산기</h2>
+                    <p class="section-desc">
+                        하루 이메일 발송량과 SNS 사용 시간을 입력하면, 오늘과 1년 기준 디지털
+                        탄소 배출량을 단순 추정해 보여줍니다. (수치는 교육용 예시입니다.)
+                    </p>
 
-                <div class="calc-grid">
-                    <!-- 입력 카드 -->
-                    <div class="card">
-                        <div class="calc-label">하루에 보내는 이메일(통)</div>
-                        <div class="calc-input-row">
-                            <input id="emailRange" class="calc-range" type="range" min="0" max="200" value="20" />
-                            <input id="emailInput" class="calc-number" type="number" min="0" max="999" value="20" />
+                    <div class="calc-grid">
+                        <!-- 입력 카드 -->
+                        <div class="card">
+                            <div class="calc-label">하루에 보내는 이메일(통)</div>
+                            <div class="calc-input-row">
+                                <input id="emailRange" class="calc-range" type="range" min="0" max="200" value="20" />
+                                <input id="emailInput" class="calc-number" type="number" min="0" max="999" value="20" />
+                            </div>
+
+                            <div class="calc-label">하루 SNS 사용 시간(시간)</div>
+                            <div class="calc-input-row">
+                                <input id="snsRange" class="calc-range" type="range" min="0" max="12" step="0.5"
+                                    value="2" />
+                                <input id="snsInput" class="calc-number" type="number" min="0" max="24" step="0.5"
+                                    value="2" />
+                            </div>
+
+                            <div class="calc-note">
+                                * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂를 가정한 단순 모델입니다.
+                            </div>
                         </div>
 
-                        <div class="calc-label">하루 SNS 사용 시간(시간)</div>
-                        <div class="calc-input-row">
-                            <input id="snsRange" class="calc-range" type="range" min="0" max="12" step="0.5"
-                                value="2" />
-                            <input id="snsInput" class="calc-number" type="number" min="0" max="24" step="0.5"
-                                value="2" />
-                        </div>
-
-                        <div class="calc-note">
-                            * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂를 가정한 단순 모델입니다.
-                        </div>
-                    </div>
-
-                    <!-- 결과 카드 -->
-                    <div class="card">
-                        <div class="hero-preview-title">계산 결과</div>
-                        <div class="meter-bar">
-                            <div id="calcMeter" class="meter-fill"></div>
-                        </div>
-                        <div id="calcTotalText" class="hero-preview-sub">
-                            오늘 0 g CO₂e (추정)
-                        </div>
-                        <div class="hero-stats" style="margin-top: 12px">
-                            <div class="stat">
-                                <div class="stat-label">이메일</div>
-                                <div class="stat-value">
-                                    <span id="calcEmailVal">0</span>
-                                    <span class="stat-unit">g</span>
+                        <!-- 결과 카드 -->
+                        <div class="card">
+                            <div class="hero-preview-title">계산 결과</div>
+                            <div class="meter-bar">
+                                <div id="calcMeter" class="meter-fill"></div>
+                            </div>
+                            <div id="calcTotalText" class="hero-preview-sub">
+                                오늘 0 g CO₂e (추정)
+                            </div>
+                            <div class="hero-stats" style="margin-top: 12px">
+                                <div class="stat">
+                                    <div class="stat-label">이메일</div>
+                                    <div class="stat-value">
+                                        <span id="calcEmailVal">0</span>
+                                        <span class="stat-unit">g</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-label">SNS</div>
+                                    <div class="stat-value">
+                                        <span id="calcSnsVal">0</span>
+                                        <span class="stat-unit">g</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="stat">
-                                <div class="stat-label">SNS</div>
-                                <div class="stat-value">
-                                    <span id="calcSnsVal">0</span>
-                                    <span class="stat-unit">g</span>
+                            <div class="hero-stats" style="margin-top: 12px">
+                                <div class="stat">
+                                    <div class="stat-label">차로 환산</div>
+                                    <div class="stat-value">
+                                        <span id="calcKm">0</span>
+                                        <span class="stat-unit">km</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-label">나무 흡수량</div>
+                                    <div class="stat-value">
+                                        <span id="calcTree">0</span>
+                                        <span class="stat-unit">그루/일</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-label">연간 추정</div>
+                                    <div class="stat-value">
+                                        <span id="calcYear">0</span>
+                                        <span class="stat-unit">kg/년</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="hero-stats" style="margin-top: 12px">
-                            <div class="stat">
-                                <div class="stat-label">차로 환산</div>
-                                <div class="stat-value">
-                                    <span id="calcKm">0</span>
-                                    <span class="stat-unit">km</span>
-                                </div>
+                            <div class="calc-note" style="margin-top: 10px">
+                                * 실제 배출량은 서비스별, 국가별 전력 믹스, 기기 종류 등에 따라 달라집니다.
                             </div>
-                            <div class="stat">
-                                <div class="stat-label">나무 흡수량</div>
-                                <div class="stat-value">
-                                    <span id="calcTree">0</span>
-                                    <span class="stat-unit">그루/일</span>
-                                </div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-label">연간 추정</div>
-                                <div class="stat-value">
-                                    <span id="calcYear">0</span>
-                                    <span class="stat-unit">kg/년</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calc-note" style="margin-top: 10px">
-                            * 실제 배출량은 서비스별, 국가별 전력 믹스, 기기 종류 등에 따라 달라집니다.
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div class="divider"></div>
 
