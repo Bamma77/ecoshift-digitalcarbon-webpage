@@ -157,7 +157,6 @@
 
                     <!-- ===== STEP 2: 개인 실천 섹션 ===== -->
                     <section id="personal" class="section">
-                        <div class="max-width">
                             <h2 class="section-title">개인 실천</h2>
                             <p class="section-desc">
                                 디지털 탄소는 거대한 데이터센터에서만 발생하지 않습니다.<br />
@@ -194,7 +193,6 @@
                                     자가검진 체크리스트로 내 실천 수준 확인하기 →
                                 </a>
                             </div>
-                        </div>
                     </section>
 
                     <div class="divider"></div>
@@ -361,7 +359,6 @@
 
                     <!-- 디지털 탄소 계산기 -->
                     <section id="calculator" class="section">
-                        <div class="home-calc">
                             <h2 class="section-title">디지털 탄소 계산기</h2>
                             <p class="section-desc">
                                 하루 이메일 발송량과 SNS 사용 시간을 입력하면, 오늘과 1년 기준 디지털
@@ -381,7 +378,7 @@
 
                                     <div class="calc-label">하루 SNS 사용 시간(시간)</div>
                                     <div class="calc-input-row">
-                                        <input id="snsRange" class="calc-range" type="range" min="0" max="24" step="0.5"
+                                        <input id="snsRange" class="calc-range" type="range" min="0" max="12" step="0.5"
                                             value="2" />
                                         <input id="snsInput" class="calc-number" type="number" min="0" max="24"
                                             step="0.5" value="2" />
@@ -396,7 +393,8 @@
                                     </div>
 
                                     <div class="calc-note">
-                                        * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂를 가정한 단순 모델입니다.
+                                        * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂, 동영상 스트리밍 1시간 ≈ 100 g CO₂를
+                                        가정한 단순 모델입니다.
                                     </div>
                                 </div>
 
@@ -421,13 +419,6 @@
                                             <div class="stat-label">SNS</div>
                                             <div class="stat-value">
                                                 <span id="calcSnsVal">0</span>
-                                                <span class="stat-unit">g</span>
-                                            </div>
-                                        </div>
-                                        <div class="stat">
-                                            <div class="stat-label">동영상</div>
-                                            <div class="stat-value">
-                                                <span id="calcVideoVal">0</span>
                                                 <span class="stat-unit">g</span>
                                             </div>
                                         </div>
@@ -460,14 +451,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
 
                     <div class="divider"></div>
 
                     <!-- ===== MENU 1: 웹페이지 소개 섹션 ===== -->
                     <section id="webpage" class="section">
-                        <div class="max-width">
                             <h2 class="section-title">웹페이지 소개</h2>
 
                             <div class="web-design-layout">
@@ -548,13 +537,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
 
                             <div class="divider"></div>
 
                             <!-- ===== 기업 실천 사례 & 참고자료 ===== -->
                             <section id="cases" class="section">
-                                <div class="max-width">
                                     <h2 class="section-title">기업 소개</h2>
                                     <p class="section-desc">
                                         공기업과 민간기업을 대상으로 진행한 인터뷰를 바탕으로,<br />
@@ -597,14 +585,12 @@
                                             인터뷰 자세히 보기
                                         </a>
                                     </div>
-                                </div>
                             </section>
 
                             <div class="divider"></div>
 
                             <!-- ===== MENU 4: ECO SHIFT 팀 소개 ===== -->
                             <section id="team" class="section">
-                                <div class="max-width">
                                     <h2 class="section-title">ECO SHIFT 팀 소개</h2>
                                     <p class="section-desc">
                                         ECO SHIFT는 디지털 탄소중립에 대한 인식 개선을 위해 서울여자대학교
@@ -612,8 +598,8 @@
                                     </p>
 
                                     <div class="card" style="margin-bottom: 16px">
-                                        <div class="survey-title">프로젝트 개요</div>
-                                        <p class="survey-desc" style="margin-top: 6px; color:#4b5563;">
+                                        <div class="case-tag">프로젝트 개요</div>
+                                        <p class="timeline" style="margin-top: 6px; color:#4b5563; font-size: 13px;">
                                             본 프로젝트는 디지털 탄소에 대한 이해를 높이고, 일상 속 디지털 사용
                                             습관을 되돌아볼 수 있는 웹 기반 서비스를 만드는 것을 목표로 합니다.<br />
                                             2025-1학기 동안 디지털 탄소 관련 자료 조사, 공기업·민간기업 인터뷰, 서비스
@@ -622,7 +608,7 @@
                                     </div>
 
                                     <div class="card" style="margin-bottom: 16px">
-                                        <div class="survey-title">진행 과정 (타임라인)</div>
+                                        <div class="case-tag">진행 과정 (타임라인)</div>
                                         <ul class="timeline">
                                             <li><strong>1-4주차</strong> &emsp;&ensp;주제 선정 및 디지털 탄소 선행 연구 조사</li>
                                             <li><strong>5-7주차</strong> &emsp;&ensp;설문 및 자가검진 리스트 초안 작성</li>
@@ -634,9 +620,6 @@
                                             <li><strong>14주차</strong> &emsp;&emsp;최종 프로젝트 발표</li>
                                         </ul>
                                     </div>
-
-                                    <div class="survey-title">팀원 소개</div>
-
                                     <div class="team-grid">
                                         <div class="member-card">
                                             <div class="member-icon">👩🏻‍💻</div>
@@ -669,7 +652,6 @@
                                             <div class="member-desc">경영학과</div>
                                         </div>
                                     </div>
-                                </div>
                             </section>
                             <div class="divider"></div>
                             <!-- ===== 푸터 ===== -->
