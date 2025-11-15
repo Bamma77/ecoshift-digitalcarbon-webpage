@@ -751,6 +751,11 @@ header {
   color: #111827;
 }
 
+.member-desc {
+  font-size: 12px;
+  color: #4b5563;
+}
+
 /* 모바일 대응 */
 @media (max-width: 900px) {
   .team-grid {
@@ -825,12 +830,6 @@ header {
   color: #e5e7eb;
 }
 
-/* 답변자 아이콘(오른쪽) */
-.chat-profile-a {
-  background: rgba(16, 185, 129, 0.2);
-  border: 1px solid rgba(16, 185, 129, 0.4);
-  color: #6ee7b7;
-}
 
 /* ================================
    ▶ 말풍선
@@ -940,3 +939,248 @@ footer {
 }
 
 
+/* =====================================
+   📱 모바일(가로 768px 이하) 최적화 공통 스타일
+   기존 스타일 위에 덮어쓰는 느낌으로 맨 아래에 추가!
+===================================== */
+@media (max-width: 768px) {
+  /* 전체 여백/패딩 살짝 줄이기 */
+  .section {
+    padding: 48px 0;
+  }
+
+  .max-width {
+    padding: 0 14px;
+  }
+
+  /* 헤더: 줄바꿈 + 좌측 정렬 */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .nav-links {
+    margin-top: 6px;
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  /* HERO 영역: 제목/본문 크기 축소 */
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 홈 메뉴 카드: 한 줄 1개, 카드 패딩 축소 */
+  .menu-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .menu-card {
+    padding: 12px;
+  }
+
+  .menu-label {
+    font-size: 12px;
+  }
+
+  .menu-title {
+    font-size: 15px;
+  }
+
+  .menu-text {
+    font-size: 11px;
+  }
+
+  /* 설문 카드(초록 그라데이션) 세로 배치 정리 */
+  .survey-block {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: left;
+    padding: 14px;
+  }
+
+  .survey-title {
+    font-size: 13px;
+  }
+
+  .survey-desc {
+    font-size: 12px;
+  }
+
+  .survey-qr {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* 웹페이지 소개 개념 카드/정보 카드: 1열 */
+  .concept-grid,
+  .info-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* 체크리스트: 양쪽 카드 간격/패딩 정리 */
+  .check-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .check-items-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .check-item {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .check-hint {
+    font-size: 11px;
+  }
+
+  /* 계산기 레이아웃: 1열 + 입력부 여백 줄이기 */
+  .calc-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .calc-label {
+    font-size: 12px;
+  }
+
+  .calc-number {
+    width: 64px;
+    font-size: 12px;
+  }
+
+  .calc-note {
+    font-size: 10px;
+  }
+
+  /* 기업 사례 카드 간격 조정 */
+  .cases-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .case-quote {
+    font-size: 13px;
+  }
+
+  .case-text {
+    font-size: 12px;
+  }
+
+  /* 팀 소개: 모바일용 열 수 줄이기 */
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .member-card {
+    padding: 10px 8px;
+  }
+
+  .member-name {
+    font-size: 13px;
+  }
+
+  .member-desc {
+    font-size: 11px;
+  }
+
+  /* 인터뷰 chat-card (company.html 포함) */
+  .chat-card {
+    width: 95%;
+    padding: 18px 16px;
+  }
+
+  .chat-bubble {
+    max-width: 100%;
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .chat-profile-q,
+  .chat-profile-a {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .chat-label {
+    font-size: 12px;
+  }
+
+  /* 푸터 폰트 살짝 줄이기 */
+  .footer-text-main {
+    font-size: 12px;
+  }
+
+  .footer-text-sub {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+
+/* 📱 아주 작은 화면(가로 420px 이하) 추가 튜닝 */
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-desc {
+    font-size: 13px;
+  }
+
+  .logo-box {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  .header-title {
+    font-size: 12px;
+  }
+}
