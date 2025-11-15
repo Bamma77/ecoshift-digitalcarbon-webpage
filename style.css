@@ -538,6 +538,15 @@ header {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* 체크리스트 항목 2열 그리드 */
+.check-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;  /* 세로/가로 간격 */
+  margin-top: 10px;
+}
+
+
 .check-item {
   display: flex;
   align-items: flex-start;
@@ -574,7 +583,7 @@ header {
   color: #4b5563;
 }
 .check-meter {
-  margin-top: 6px;
+  margin-top: 12px;
   width: 100%;
   height: 10px;
   border-radius: 999px;
@@ -589,20 +598,25 @@ header {
   transition: width 0.25s ease;
 }
 .check-stats {
-  margin-top: 12px;
+  margin-top: 8px;
   display: flex;
   gap: 8px;
 }
 .check-summary {
-  margin-top: 12px;
-  font-size: 13px;
+  margin-top: 8px;
+  font-size: 12px;
   background: #ecfdf5;
   color: #14532d;
   padding: 12px;
   border-radius: 12px;
   border: 1px solid #bbf7d0;
 }
-
+/* 모바일에서는 다시 한 열로 */
+@media (max-width: 900px) {
+  .check-items-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 /* 계산기 섹션 */
 .calc-grid {
   display: grid;
@@ -655,7 +669,7 @@ header {
   }
 }
 .case-tag {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: #10b981;
 }
@@ -689,11 +703,11 @@ header {
 .team-list li,
 .ref-list li {
   font-size: 13px;
-  color: #d1d5db;
+  color:#4b5563;
   margin-bottom: 4px;
 }
 .timeline strong {
-  color: #a5b4fc;
+  color: rgb(4, 67, 46)1;
   font-weight: 600;
   margin-right: 4px;
 }
@@ -706,13 +720,13 @@ header {
 }
 
 .member-card {
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
   border-radius: 14px;
   padding: 14px 10px;
   text-align: center;
-  color: #e5e7eb;
+  color: #111827;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -734,7 +748,7 @@ header {
 .member-name {
   font-size: 14px;
   font-weight: 600;
-  color: #d1d5db;
+  color: #111827;
 }
 
 /* 모바일 대응 */
@@ -748,6 +762,154 @@ header {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ================================
+   ▶ 인터뷰 Q/A 전체 카드(chat-card)
+================================ */
+.chat-card {
+  width: 90%;                         /* 너비 */
+  margin: 0 auto 36px auto;           /* 가운데 정렬 */
+  padding: 28px 32px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);  /* 투명 */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Q/A 묶음 */
+.chat-thread {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+/* ================================
+   ▶ 프로필 + 말풍선 정렬
+================================ */
+.chat-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* 질문(Q) = 왼쪽 정렬 */
+.chat-row-q {
+  justify-content: flex-start;
+}
+
+/* 답변(A) = 오른쪽 정렬 */
+.chat-row-a {
+  justify-content: flex-end;
+}
+
+/* ================================
+   ▶ 프로필 아이콘
+================================ */
+.chat-profile-q, .chat-profile-a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* 질문자 아이콘(왼쪽) */
+.chat-profile-q {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(75, 85, 99, 0.7);
+  color: #e5e7eb;
+}
+
+/* 답변자 아이콘(오른쪽) */
+.chat-profile-a {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+/* ================================
+   ▶ 말풍선
+================================ */
+.chat-bubble {
+  max-width: 65%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 질문 버블 */
+.chat-bubble-q {
+  margin-right: auto;
+  background: linear-gradient(135deg, #059669, #0f766e);
+  color: #ecfdf5;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+/* 답변 버블 */
+.chat-bubble-a {
+  margin-left: auto;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.1);
+  color: #111827;
+}
+
+/* SMALL LABEL (Q / A 이름 표시) */
+.chat-label {
+  font-size: 14px;
+  font-weight: 1000;
+  margin-bottom: 5px;
+}
+
+.chat-label-q {
+  color: #c7d2fe;
+}
+
+.chat-label-a {
+  color: #059669;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .chat-card {
+    width: 95%;
+    padding: 20px;
+  }
+  .chat-bubble {
+    max-width: 100%;
+  }
+}
+
+/* ===== 맨 위로 가기 버튼 ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 55px;
+  font-size: 26px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(16, 185, 129, 0.25);
+  color: #6ee7b7;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: all 0.25s ease;
+  display: none;
+  z-index: 50;
+}
+
+.back-to-top:hover {
+  background: rgba(16, 185, 129, 0.4);
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.6);
 }
 
 
@@ -776,3 +938,5 @@ footer {
   font-size: 11px;
   color: #6b7280;
 }
+
+
