@@ -19,12 +19,6 @@
                     <a href="#home" class="header-title">
                         Digital Carbon Zero Project
                     </a>
-                    <div class="nav-links">
-                        <a href="#intro">디지털 탄소란?</a>
-                        <a href="#cases">기업 사례</a>
-                        <a href="#calculator">탄소 계산기</a>
-                        <a href="#team">ECO SHIFT</a>
-                    </div>
                 </div>
             </div>
             <div class="header-right">
@@ -76,7 +70,7 @@
                             <div class="menu-label">STEP 3</div>
                             <div class="menu-title">자가검진 체크리스트</div>
                             <div class="menu-text">
-                                공기업·사기업 인터뷰와 실제 디지털 탄소중립 사례를 소개합니다.
+                                공기업·민간기업 인터뷰와 실제 디지털 탄소중립 사례를 소개합니다.
                             </div>
                         </a>
                         <a href="https://example.com/survey" target="_blank" class="menu-card">
@@ -98,8 +92,8 @@
                 <div class="max-width">
                     <h2 class="section-title">디지털 탄소란?</h2>
                     <p class="section-desc">
-                        우리는 매일 이메일을 보내고, SNS를 사용하고, 영상을 스트리밍합니다.<br />
-                        하지만 그 모든 디지털 활동이 ‘탄소’를 만든다는 사실, 알고 계셨나요?
+                        디지털 탄소란 디지털 기기 사용, 데이터 센터 운영 등 디지털 활동 전반에서 발생하는 온실가스 배출을 의미합니다.<br />
+                        이는 스마트폰, 컴퓨터 사용 시 발생하는 전력 소비와 서버 운영, 데이터 저장 및 전송 과정에서 발생하는 이산화탄소 등을 포함하며, '디지털 탄소 발자국'이라고도 불립니다.
                     </p>
 
                     <!-- 개념 3가지 -->
@@ -207,17 +201,16 @@
 
                     <!-- 자가검진 체크리스트 -->
                     <section id="checklist" class="section">
+                        <h3 class="section-title" style="font-size: 30px; margin-bottom: 4px">
+                            자가검진 체크리스트
+                        </h3>
+                        <p class="section-desc" style="margin-bottom: 10px">
+                            아래 항목 중 실천하고 있는 것을 선택해 보세요. 체크 개수에 따라
+                            진행도와 간단한 피드백을 보여드립니다.
+                        </p>
                         <div class="check-grid">
                             <!-- 체크박스들 -->
                             <div>
-                                <h3 class="section-title" style="font-size: 30px; margin-bottom: 4px">
-                                    자가검진 체크리스트
-                                </h3>
-                                <p class="section-desc" style="margin-bottom: 10px">
-                                    아래 항목 중 실천하고 있는 것을 선택해 보세요. 체크 개수에 따라
-                                    진행도와 간단한 피드백을 보여드립니다.
-                                </p>
-
                                 <label class="check-item">
                                     <input type="checkbox" class="check" />
                                     <div>
@@ -291,6 +284,9 @@
                                         </div>
                                     </div>
                                 </label>
+                            </div>
+                            <!-- 진행도/결과 카드 -->
+                            <div>
                                 <label class="check-item">
                                     <input type="checkbox" class="check" />
                                     <div>
@@ -302,405 +298,408 @@
                                         </div>
                                     </div>
                                 </label>
-                            </div>
-
-                            <!-- 진행도/결과 카드 -->
-                            <div class="card">
-                                <div class="check-meter-wrap">
-                                    <div class="check-meter-label">진행도</div>
-                                    <div class="check-meter">
-                                        <div id="checkMeterFill" class="check-meter-fill"></div>
-                                    </div>
-                                </div>
-                                <div class="check-stats">
-                                    <div class="stat">
-                                        <div class="stat-label">체크 개수</div>
-                                        <div class="stat-value">
-                                            <span id="checkCount">0</span>
-                                            <span class="stat-unit">/ 8</span>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            습관적이고 무의미한 온라인 활동 시간을 줄이려고 노력한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            불필요한 스크롤과 반복 시청을 줄이면 데이터 전송·기기 사용 전력을 함께 낮출 수 있습니다.
                                         </div>
                                     </div>
-                                    <div class="stat">
-                                        <div class="stat-label">영향 점수</div>
-                                        <div class="stat-value">
-                                            <span id="checkScore">0</span>
-                                            <span class="stat-unit">점</span>
+                                </label>
+                                <label class="check-item">
+                                    <input type="checkbox" class="check" />
+                                    <div>
+                                        <div class="check-label">
+                                            이메일 첨부파일 대신 클라우드나 링크공유(Drive, Dropbox 등)를 적극 활용한다.
+                                        </div>
+                                        <div class="check-hint">
+                                            네트워크 사용량이 줄고, 장기적으로 서버 저장 및 백업 에너지까지 절감됩니다.
                                         </div>
                                     </div>
-                                    <div class="stat">
-                                        <div class="stat-label">실천률</div>
-                                        <div class="stat-value">
-                                            <span id="checkPct">0</span>
-                                            <span class="stat-unit">%</span>
+                                </label>
+                                <div class="card">
+                                    <div class="check-meter-wrap">
+                                        <div class="check-meter-label">진행도</div>
+                                        <div class="check-meter">
+                                            <div id="checkMeterFill" class="check-meter-fill"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="checkSummary" class="check-summary">
-                                    아직 체크가 없습니다. 오늘 실천할 수 있는 습관부터 하나 골라볼까요?
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- 디지털 탄소 계산기 -->
-            <section id="calculator" class="section">
-                <div class="home-calc">
-                    <h2 class="section-title">디지털 탄소 계산기</h2>
-                    <p class="section-desc">
-                        하루 이메일 발송량과 SNS 사용 시간을 입력하면, 오늘과 1년 기준 디지털
-                        탄소 배출량을 단순 추정해 보여줍니다. (수치는 교육용 예시입니다.)
-                    </p>
-
-                    <div class="calc-grid">
-                        <!-- 입력 카드 -->
-                        <div class="card">
-                            <div class="calc-label">하루에 보내는 이메일(통)</div>
-                            <div class="calc-input-row">
-                                <input id="emailRange" class="calc-range" type="range" min="0" max="200" value="20" />
-                                <input id="emailInput" class="calc-number" type="number" min="0" max="999" value="20" />
-                            </div>
-
-                            <div class="calc-label">하루 SNS 사용 시간(시간)</div>
-                            <div class="calc-input-row">
-                                <input id="snsRange" class="calc-range" type="range" min="0" max="12" step="0.5"
-                                    value="2" />
-                                <input id="snsInput" class="calc-number" type="number" min="0" max="24" step="0.5"
-                                    value="2" />
-                            </div>
-
-                            <div class="calc-note">
-                                * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂를 가정한 단순 모델입니다.
-                            </div>
-                        </div>
-
-                        <!-- 결과 카드 -->
-                        <div class="card">
-                            <div class="hero-preview-title">계산 결과</div>
-                            <div class="meter-bar">
-                                <div id="calcMeter" class="meter-fill"></div>
-                            </div>
-                            <div id="calcTotalText" class="hero-preview-sub">
-                                오늘 0 g CO₂e (추정)
-                            </div>
-                            <div class="hero-stats" style="margin-top: 12px">
-                                <div class="stat">
-                                    <div class="stat-label">이메일</div>
-                                    <div class="stat-value">
-                                        <span id="calcEmailVal">0</span>
-                                        <span class="stat-unit">g</span>
+                                    <div class="check-stats">
+                                        <div class="stat">
+                                            <div class="stat-label">체크 개수</div>
+                                            <div class="stat-value">
+                                                <span id="checkCount">0</span>
+                                                <span class="stat-unit">/ 10</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">영향 점수</div>
+                                            <div class="stat-value">
+                                                <span id="checkScore">0</span>
+                                                <span class="stat-unit">점</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">실천률</div>
+                                            <div class="stat-value">
+                                                <span id="checkPct">0</span>
+                                                <span class="stat-unit">%</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-label">SNS</div>
-                                    <div class="stat-value">
-                                        <span id="calcSnsVal">0</span>
-                                        <span class="stat-unit">g</span>
+                                    <div id="checkSummary" class="check-summary">
+                                        아직 체크가 없습니다. 오늘 실천할 수 있는 습관부터 하나 골라볼까요?
                                     </div>
                                 </div>
                             </div>
-                            <div class="hero-stats" style="margin-top: 12px">
-                                <div class="stat">
-                                    <div class="stat-label">차로 환산</div>
-                                    <div class="stat-value">
-                                        <span id="calcKm">0</span>
-                                        <span class="stat-unit">km</span>
-                                    </div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-label">나무 흡수량</div>
-                                    <div class="stat-value">
-                                        <span id="calcTree">0</span>
-                                        <span class="stat-unit">그루/일</span>
-                                    </div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-label">연간 추정</div>
-                                    <div class="stat-value">
-                                        <span id="calcYear">0</span>
-                                        <span class="stat-unit">kg/년</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calc-note" style="margin-top: 10px">
-                                * 실제 배출량은 서비스별, 국가별 전력 믹스, 기기 종류 등에 따라 달라집니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- ===== MENU 1: 웹페이지 소개 섹션 ===== -->
-            <section id="webpage" class="section">
-                <div class="max-width">
-                    <h2 class="section-title">웹페이지 소개</h2>
-                    <p class="section-desc">
-                        이 웹페이지는 단순히 디지털 탄소인식을 높이는 데서 그치지 않습니다.<br />
-                        페이지 자체가 에너지 효율적인 디자인 원칙을 따르며,<br />
-                        지속가능한 디지털 제작방식의 실제 사례로 보일 수 있도록 설계되었습니다.
-                    </p>
-
-                    <div class="web-design-layout">
-                        <!-- 왼쪽: 요약 카드 -->
-                        <div class="card web-design-note">
-                            <div class="web-design-note-title">ECO SHIFT 웹 디자인 원칙</div>
-                            <p class="web-design-note-text">
-                                이 페이지는 콘텐츠 구조, 색상, 코드 작성 방식까지<br />
-                                디지털 탄소를 줄이기 위한 원칙을 실제로 적용한 사례입니다.
-                            </p>
-                            <ul class="web-design-bullets">
-                                <li>불필요한 이미지/스크립트 최소화</li>
-                                <li>어두운 배경 기반의 에너지 효율적인 UI</li>
-                                <li>가볍고 단순한 코드 구조 유지</li>
-                            </ul>
-                        </div>
-
-                        <!-- 오른쪽: 5가지 원칙 리스트 -->
-                        <div class="web-design-list">
-                            <!-- 1. 이미지 최소화 -->
-                            <div class="web-principle">
-                                <div class="web-principle-icon">🧩</div>
-                                <div class="web-principle-main">
-                                    <div class="web-principle-header">
-                                        <div class="web-principle-title">이미지 최소화</div>
-                                        <span class="web-principle-tag">LOW DATA</span>
-                                    </div>
-                                    <p class="web-principle-body">
-                                        텍스트 중심의 간결한 구성으로 불필요한 이미지 사용을 줄였어요.
-                                        가벼운 페이지는 데이터 전송량을 줄여 디지털 탄소를 절감합니다.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- 2. 어두운 배경 -->
-                            <div class="web-principle">
-                                <div class="web-principle-icon">🌑</div>
-                                <div class="web-principle-main">
-                                    <div class="web-principle-header">
-                                        <div class="web-principle-title">어두운 배경(다크 모드 최적화)</div>
-                                        <span class="web-principle-tag">DARK UI</span>
-                                    </div>
-                                    <p class="web-principle-body">
-                                        디스플레이 전력 소모를 줄이기 위해 어두운 배경을 기본으로 적용했어요.
-                                        눈의 피로를 줄이고 에너지 효율을 높입니다.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- 3. 지속 가능한 폰트와 색상 -->
-                            <div class="web-principle">
-                                <div class="web-principle-icon">🎨</div>
-                                <div class="web-principle-main">
-                                    <div class="web-principle-header">
-                                        <div class="web-principle-title">지속 가능한 폰트와 색상 사용</div>
-                                        <span class="web-principle-tag">COLOR & TYPE</span>
-                                    </div>
-                                    <p class="web-principle-body">
-                                        복잡한 그래픽 대신 단색과 명확한 대비로 정보를 전달합니다.
-                                        간결한 시각 요소는 시선 집중과 에너지 절약에 도움이 됩니다.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- 4. 가벼운 코드 구조 -->
-                            <div class="web-principle">
-                                <div class="web-principle-icon">⚡</div>
-                                <div class="web-principle-main">
-                                    <div class="web-principle-header">
-                                        <div class="web-principle-title">가벼운 코드 구조</div>
-                                        <span class="web-principle-tag">LEAN CODE</span>
-                                    </div>
-                                    <p class="web-principle-body">
-                                        최소한의 CSS와 JS만 사용해 페이지 로딩 속도를 높였어요.
-                                        불필요한 연산을 줄여 서버 에너지도 함께 절감합니다.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- 5. 불필요한 페이지 요소 제거 -->
-                            <div class="web-principle">
-                                <div class="web-principle-icon">🧹</div>
-                                <div class="web-principle-main">
-                                    <div class="web-principle-header">
-                                        <div class="web-principle-title">불필요한 페이지 요소 제거</div>
-                                        <span class="web-principle-tag">NO CLUTTER</span>
-                                    </div>
-                                    <p class="web-principle-body">
-                                        사용하지 않는 버튼, 광고, 스크립트를 제거했어요.
-                                        페이지가 간결해질수록 서버 요청과 에너지 사용을 줄일 수 있습니다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
 
                     <div class="divider"></div>
 
-                    <!-- ===== 기업 실천 사례 & 참고자료 ===== -->
-                    <section id="cases" class="section">
-                        <div class="max-width">
-                            <h2 class="section-title">기업 소개</h2>
+                    <!-- 디지털 탄소 계산기 -->
+                    <section id="calculator" class="section">
+                        <div class="home-calc">
+                            <h2 class="section-title">디지털 탄소 계산기</h2>
                             <p class="section-desc">
-                                공기업과 사기업은 디지털 인프라를 개선하는 방식으로 디지털 탄소중립을
-                                실천하고 있습니다. 아래는 인터뷰를 기반으로 재구성한 예시입니다.
+                                하루 이메일 발송량과 SNS 사용 시간을 입력하면, 오늘과 1년 기준 디지털
+                                탄소 배출량을 단순 추정해 보여줍니다.
                             </p>
 
-                            <div class="cases-top">
+                            <div class="calc-grid">
+                                <!-- 입력 카드 -->
                                 <div class="card">
-                                    <div class="case-tag">공기업 · 한국가스공사</div>
-                                    <div class="case-quote">
-                                        “업무 시스템 기본 모드를 절전 모드로 전환해 연간 서버 전력 12% 감소”
+                                    <div class="calc-label">하루에 보내는 이메일(통)</div>
+                                    <div class="calc-input-row">
+                                        <input id="emailRange" class="calc-range" type="range" min="0" max="200"
+                                            value="20" />
+                                        <input id="emailInput" class="calc-number" type="number" min="0" max="999"
+                                            value="20" />
                                     </div>
-                                    <div class="case-text">
-                                        업무 시스템 표준을 절전 모드로 바꾸고, 서버 및 스토리지를 정리·통합하여 에너지 사용량을 줄였습니다.
-                                        또한 데이터센터 냉방 효율을 모니터링하는 시스템을 도입해 전력 사용을 최적화했습니다.
+
+                                    <div class="calc-label">하루 SNS 사용 시간(시간)</div>
+                                    <div class="calc-input-row">
+                                        <input id="snsRange" class="calc-range" type="range" min="0" max="24" step="0.5"
+                                            value="2" />
+                                        <input id="snsInput" class="calc-number" type="number" min="0" max="24"
+                                            step="0.5" value="2" />
+                                    </div>
+
+                                    <div class="calc-label">하루 동영상 스트리밍 시간(시간)</div>
+                                    <div class="calc-input-row">
+                                        <input id="videoRange" class="calc-range" type="range" min="0" max="24"
+                                            step="0.5" value="2" />
+                                        <input id="videoInput" class="calc-number" type="number" min="0" max="24"
+                                            step="0.5" value="2" />
+                                    </div>
+
+                                    <div class="calc-note">
+                                        * 이메일 1통 ≈ 4 g CO₂, SNS 1시간 ≈ 36 g CO₂를 가정한 단순 모델입니다.
                                     </div>
                                 </div>
+
+                                <!-- 결과 카드 -->
                                 <div class="card">
-                                    <div class="case-tag">사기업 · ○○기업</div>
-                                    <div class="case-quote">
-                                        “클라우드 전환과 서버 통합으로 데이터센터 전력 사용량과 탄소를 동시에 절감”
+                                    <div class="hero-preview-title">계산 결과</div>
+                                    <div class="meter-bar">
+                                        <div id="calcMeter" class="meter-fill"></div>
                                     </div>
-                                    <div class="case-text">
-                                        온프레미스 서버를 클라우드로 전환하고, 로그·백업 데이터 보관 기간을 재설계하여 불필요한 저장을 줄였습니다.
-                                        업무용 SaaS를 도입해 중복 시스템을 제거하고, 비용·탄소를 함께 절감했습니다.
+                                    <div id="calcTotalText" class="hero-preview-sub">
+                                        오늘 0 g CO₂e (추정)
+                                    </div>
+                                    <div class="hero-stats" style="margin-top: 12px">
+                                        <div class="stat">
+                                            <div class="stat-label">이메일</div>
+                                            <div class="stat-value">
+                                                <span id="calcEmailVal">0</span>
+                                                <span class="stat-unit">g</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">SNS</div>
+                                            <div class="stat-value">
+                                                <span id="calcSnsVal">0</span>
+                                                <span class="stat-unit">g</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">동영상</div>
+                                            <div class="stat-value">
+                                                <span id="calcVideoVal">0</span>
+                                                <span class="stat-unit">g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hero-stats" style="margin-top: 12px">
+                                        <div class="stat">
+                                            <div class="stat-label">차로 환산</div>
+                                            <div class="stat-value">
+                                                <span id="calcKm">0</span>
+                                                <span class="stat-unit">km</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">나무 흡수량</div>
+                                            <div class="stat-value">
+                                                <span id="calcTree">0</span>
+                                                <span class="stat-unit">그루/일</span>
+                                            </div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-label">연간 추정</div>
+                                            <div class="stat-value">
+                                                <span id="calcYear">0</span>
+                                                <span class="stat-unit">kg/년</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calc-note" style="margin-top: 10px">
+                                        * 실제 배출량은 서비스별, 국가별 전력 믹스, 기기 종류 등에 따라 달라집니다.
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
 
-                            <!-- 설문 카드는 HOME으로 이동했으므로 여기에는 참고자료만 -->
-                            <div class="cases-bottom">
-                                <div class="card">
-                                    <div class="survey-title">참고 자료 · 출처</div>
-                                    <ul class="ref-list">
-                                        <li>국제 에너지기구(IEA) 등 공개 자료 기반 디지털 탄소 개념 참고</li>
-                                        <li>한국가스공사 전 부사장 인터뷰(○○년 ○월 진행, 교육 목적 요약)</li>
-                                        <li>○○기업 ESG 보고서 및 공식 웹사이트 내용 참고(예시)</li>
-                                        <li>본 사이트는 교육용 프로토타입이며 실제 값과 차이가 있을 수 있습니다.</li>
+                    <div class="divider"></div>
+
+                    <!-- ===== MENU 1: 웹페이지 소개 섹션 ===== -->
+                    <section id="webpage" class="section">
+                        <div class="max-width">
+                            <h2 class="section-title">웹페이지 소개</h2>
+
+                            <div class="web-design-layout">
+                                <!-- 왼쪽: 요약 카드 -->
+                                <div class="card web-design-note">
+                                    <div class="web-design-note-title">ECO SHIFT 웹 디자인 원칙</div>
+                                    <p class="web-design-note-text">
+                                        이 페이지는 콘텐츠 구조, 색상, 코드 작성 방식까지<br />
+                                        디지털 탄소를 줄이기 위한 에너지 효율적인 디자인 원칙을 따르며,<br />
+                                        지속가능한 디지털 제작방식의 실제 사례로 보일 수 있도록 설계되었습니다.
+                                    </p>
+                                    <ul class="web-design-bullets">
+                                        <li>불필요한 이미지/스크립트 최소화</li>
+                                        <li>어두운 배경 기반의 에너지 효율적인 UI</li>
+                                        <li>가볍고 단순한 코드 구조 유지</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
 
-                    <div class="divider"></div>
-
-                    <!-- ===== MENU 4: ECO SHIFT 팀 소개 ===== -->
-                    <section id="team" class="section">
-                        <div class="max-width">
-                            <h2 class="section-title">ECO SHIFT 팀 소개</h2>
-                            <p class="section-desc">
-                                ECO SHIFT는 디지털 탄소중립에 대한 인식 개선을 위해 서울여자대학교
-                                바롬종합설계프로젝트 강의를 통해 모인 팀입니다.
-                            </p>
-
-                            <div class="card" style="margin-bottom: 16px">
-                                <div class="survey-title">프로젝트 개요</div>
-                                <p class="survey-desc" style="margin-top: 6px; color:#4b5563;">
-                                    본 프로젝트는 디지털 탄소에 대한 이해를 높이고, 일상 속 디지털 사용
-                                    습관을 되돌아볼 수 있는 웹 기반 서비스를 만드는 것을 목표로 합니다.
-                                    1학기 동안 디지털 탄소 관련 자료 조사, 공기업·사기업 인터뷰, 서비스
-                                    기획·디자인, 프로토타입 제작, 교내부스 활동 등을 진행했습니다.
-                                </p>
-                            </div>
-
-                            <div class="card" style="margin-bottom: 16px">
-                                <div class="survey-title">진행 과정 (타임라인)</div>
-                                <ul class="timeline">
-                                    <li>주제 선정 및 디지털 탄소 선행 연구 조사</li>
-                                    <li>설문 및 자가검진 리스트 초안 작성</li>
-                                    <li>공기업·사기업 인터뷰 진행 및 실천 사례 분석</li>
-                                    <li>웹사이트 구조 설계 및 시안/프로토타입 제작</li>
-                                </ul>
-                            </div>
-
-                            <div class="card team-card-container" style="margin-bottom: 16px">
-                                <div class="survey-title">팀원 소개</div>
-
-                                <div class="team-grid">
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">우희영</div>
+                                <!-- 오른쪽: 5가지 원칙 리스트 -->
+                                <div class="web-design-list">
+                                    <!-- 1. 이미지 최소화 -->
+                                    <div class="web-principle">
+                                        <div class="web-principle-icon">🧩</div>
+                                        <div class="web-principle-main">
+                                            <div class="web-principle-header">
+                                                <div class="web-principle-title">이미지 최소화</div>
+                                                <span class="web-principle-tag">LOW DATA</span>
+                                            </div>
+                                            <p class="web-principle-body">
+                                                텍스트 중심의 간결한 구성으로 불필요한 이미지 사용을 줄였어요.
+                                                가벼운 페이지는 데이터 전송량을 줄여 디지털 탄소를 절감합니다.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">김문영</div>
+
+                                    <!-- 2. 어두운 배경 -->
+                                    <div class="web-principle">
+                                        <div class="web-principle-icon">🌑</div>
+                                        <div class="web-principle-main">
+                                            <div class="web-principle-header">
+                                                <div class="web-principle-title">어두운 배경(다크 모드 최적화)</div>
+                                                <span class="web-principle-tag">DARK UI</span>
+                                            </div>
+                                            <p class="web-principle-body">
+                                                디스플레이 전력 소모를 줄이기 위해 어두운 배경을 기본으로 적용했어요.
+                                                눈의 피로를 줄이고 에너지 효율을 높입니다.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">김지우</div>
+
+                                    <!-- 3. 지속 가능한 폰트와 색상 -->
+                                    <div class="web-principle">
+                                        <div class="web-principle-icon">🎨</div>
+                                        <div class="web-principle-main">
+                                            <div class="web-principle-header">
+                                                <div class="web-principle-title">지속 가능한 폰트와 색상 사용</div>
+                                                <span class="web-principle-tag">COLOR & TYPE</span>
+                                            </div>
+                                            <p class="web-principle-body">
+                                                복잡한 그래픽 대신 단색과 명확한 대비로 정보를 전달합니다.
+                                                간결한 시각 요소는 시선 집중과 에너지 절약에 도움이 됩니다.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">김수연</div>
+
+                                    <!-- 4. 가벼운 코드 구조 -->
+                                    <div class="web-principle">
+                                        <div class="web-principle-icon">⚡</div>
+                                        <div class="web-principle-main">
+                                            <div class="web-principle-header">
+                                                <div class="web-principle-title">가벼운 코드 구조</div>
+                                                <span class="web-principle-tag">LEAN CODE</span>
+                                            </div>
+                                            <p class="web-principle-body">
+                                                최소한의 CSS와 JS만 사용해 페이지 로딩 속도를 높였어요.
+                                                불필요한 연산을 줄여 서버 에너지도 함께 절감합니다.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">오주연</div>
-                                    </div>
-                                    <div class="member-card">
-                                        <div class="member-icon">👩🏻‍💻</div>
-                                        <div class="member-name">르우티디엡안</div>
+
+                                    <!-- 5. 불필요한 페이지 요소 제거 -->
+                                    <div class="web-principle">
+                                        <div class="web-principle-icon">🧹</div>
+                                        <div class="web-principle-main">
+                                            <div class="web-principle-header">
+                                                <div class="web-principle-title">불필요한 페이지 요소 제거</div>
+                                                <span class="web-principle-tag">NO CLUTTER</span>
+                                            </div>
+                                            <p class="web-principle-body">
+                                                사용하지 않는 버튼, 광고, 스크립트를 제거했어요.
+                                                페이지가 간결해질수록 서버 요청과 에너지 사용을 줄일 수 있습니다.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <div class="survey-title">참고 자료 및 출처</div>
-                                <ul class="ref-list">
-                                    <li>디지털 탄소 관련 국내·외 보고서 및 기사</li>
-                                    <li>한국가스공사 전 부사장 인터뷰(○○년 ○월, 교육 목적 요약)</li>
-                                    <li>○○ 사기업 ESG 보고서 및 공개 자료</li>
-                                    <li>위 수치는 교육용 예시이며 실제 값과 차이가 있을 수 있습니다.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                            <div class="divider"></div>
 
-                    <!-- ✅ 인식 개선 설문 (두 번째 디자인을 HOME에만 배치) -->
-                    <div id="survey" class="survey-block">
-                        <div>
-                            <div class="survey-title">디지털 탄소중립 인식 개선 설문</div>
-                            <div class="survey-desc">
-                                아래 링크 또는 QR로 참여해 주세요. 설문 결과는 서비스 개선과 추가 교육 방향을 잡는 데 활용됩니다.
-                            </div>
-                            <div class="survey-actions">
-                                <a href="https://example.com/survey" target="_blank" class="btn survey-btn">설문 참여하기</a>
-                            </div>
-                        </div>
-                        <div>
-                            <img class="survey-qr"
-                                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com/survey"
-                                alt="설문 QR 코드" />
-                        </div>
-                    </div>
-                </div>
+                            <!-- ===== 기업 실천 사례 & 참고자료 ===== -->
+                            <section id="cases" class="section">
+                                <div class="max-width">
+                                    <h2 class="section-title">기업 소개</h2>
+                                    <p class="section-desc">
+                                        공기업과 민간기업을 대상으로 진행한 인터뷰를 바탕으로,<br />
+                                        실제 조직에서 디지털 탄소를 줄이기 위해 어떤 고민과 실천을 하고 있는지를 살펴봅니다.
+                                    </p>
 
-                <!-- ===== 푸터 ===== -->
-                <footer>
-                    <div class="max-width">
-                        <div class="footer-card">
-                            <div class="footer-text-main">
-                                Digital Carbon Zero Project · ECO SHIFT
-                            </div>
-                            <div class="footer-text-sub">
-                                서울여자대학교 바롬종합설계 프로젝트 – 디지털 탄소중립 인식 개선 웹
-                                서비스 (교육용 프로토타입)
-                            </div>
-                        </div>
-                        <div class="footer-bottom">
-                            © <span id="year"></span> ECO SHIFT. All rights reserved.
-                            · 이 페이지는 교육용으로 제작되었습니다.
-                        </div>
-                    </div>
-                </footer>
+                                    <div class="cases-top">
+                                        <!-- 공기업 카드 -->
+                                        <div class="card">
+                                            <div class="case-tag">공기업 · 한국가스공사</div>
+                                            <div class="case-quote">
+                                                “인식 전환에서 과제 발굴·실행·평가로 이어지는 순환형 감축 구조”
+                                            </div>
+                                            <div class="case-text">
+                                                한국가스공사(KOGAS)는 청정에너지 공급을 통해 국민생활의 편익 증진 및 공공복리 향상을 목표로 1983년 8월 설립된 에너지
+                                                공기업입니다.
+                                                천연가스의 장기·안정적 공급 기반을 확보하여 국가 에너지 안보를 강화하고, 지속가능한 청정에너지 체계 구축을 통해 국민의 삶의
+                                                질을 높이는 데
+                                                힘쓰고 있습니다.
+                                            </div>
+                                        </div>
 
-                <!-- 외부 JS -->
-                <script src="script.js"></script>
+                                        <!-- 민간기업 카드 -->
+                                        <div class="card">
+                                            <div class="case-tag">민간기업 · 효정국제환경평화재단(HJIFEP)</div>
+                                            <div class="case-quote">
+                                                “디지털 탄소 문제의 출발점은 ‘의식 전환’”
+                                            </div>
+                                            <div class="case-text">
+                                                효정국제환경평화재단(HJIFEP)은 지구 환경의 보호·보존·복구를 목표로 2017년에 설립된 민간 비영리 공익단체(NGO)입니다.
+                                                인간과 자연의 본연적 관계 회복을 위한 노력과 함께 과학기술의 올바른 사용, 새로운 첨단 과학의 가능성에 대해 열린 자세를
+                                                고취합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 인터뷰 상세 페이지로 이동 -->
+                                    <div style="margin-top: 20px; text-align: right;">
+                                        <a href="company.html#home" class="btn btn-outline">
+                                            인터뷰 자세히 보기
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="divider"></div>
+
+                            <!-- ===== MENU 4: ECO SHIFT 팀 소개 ===== -->
+                            <section id="team" class="section">
+                                <div class="max-width">
+                                    <h2 class="section-title">ECO SHIFT 팀 소개</h2>
+                                    <p class="section-desc">
+                                        ECO SHIFT는 디지털 탄소중립에 대한 인식 개선을 위해 서울여자대학교
+                                        바롬종합설계프로젝트 강의를 통해 모인 팀입니다.
+                                    </p>
+
+                                    <div class="card" style="margin-bottom: 16px">
+                                        <div class="survey-title">프로젝트 개요</div>
+                                        <p class="survey-desc" style="margin-top: 6px; color:#4b5563;">
+                                            본 프로젝트는 디지털 탄소에 대한 이해를 높이고, 일상 속 디지털 사용
+                                            습관을 되돌아볼 수 있는 웹 기반 서비스를 만드는 것을 목표로 합니다.<br />
+                                            2025-1학기 동안 디지털 탄소 관련 자료 조사, 공기업·민간기업 인터뷰, 서비스
+                                            기획·디자인, 프로토타입 제작, 교내부스 활동 등을 진행했습니다.
+                                        </p>
+                                    </div>
+
+                                    <div class="card" style="margin-bottom: 16px">
+                                        <div class="survey-title">진행 과정 (타임라인)</div>
+                                        <ul class="timeline">
+                                            <li><strong>1-4주차</strong> &emsp;&ensp;주제 선정 및 디지털 탄소 선행 연구 조사</li>
+                                            <li><strong>5-7주차</strong> &emsp;&ensp;설문 및 자가검진 리스트 초안 작성</li>
+                                            <li><strong>8-9주차</strong> &emsp;&ensp;기업 인터뷰 진행 및 실천 사례 분석</li>
+                                            <li><strong>10-11주차</strong> &nbsp;웹사이트 프로토타입 제작 및 구현</li>
+                                            <li><strong>12-13주차</strong> &nbsp;교내부스 활동</li>
+                                            <li><strong>14주차</strong> &emsp;&emsp;최종 프로젝트 발표</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="survey-title">팀원 소개</div>
+
+                                    <div class="team-grid">
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">우희영</div>
+                                        </div>
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">김문영</div>
+                                        </div>
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">김지우</div>
+                                        </div>
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">김수연</div>
+                                        </div>
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">오주연</div>
+                                        </div>
+                                        <div class="member-card">
+                                            <div class="member-icon">👩🏻‍💻</div>
+                                            <div class="member-name">르우티디엡안</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="divider"></div>
+                            <!-- ===== 푸터 ===== -->
+                            <footer>
+                                <div class="max-width">
+                                    <div class="footer-card">
+                                        <div class="footer-text-main">
+                                            Digital Carbon Zero Project · ECO SHIFT
+                                        </div>
+                                        <div class="footer-text-sub">
+                                            서울여자대학교 바롬종합설계 프로젝트 02분반 – 디지털 탄소중립 인식 개선 웹서비스 (교육용 프로토타입)
+                                        </div>
+                                    </div>
+                                    <div class="footer-bottom">
+                                        © <span id="year"></span> ECO SHIFT. All rights reserved.
+                                        · 이 페이지는 교육용으로 제작되었습니다.
+                                    </div>
+                                </div>
+                            </footer>
+                            <!-- 맨 위로 가기 버튼 -->
+                            <button id="backToTopBtn" class="back-to-top"></button>
+                            <!-- 외부 JS -->
+                            <script src="script.js"></script>
 </body>
 
 </html>
