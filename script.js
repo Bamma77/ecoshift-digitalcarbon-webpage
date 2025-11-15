@@ -142,21 +142,17 @@ checkBoxes.forEach((cb) => {
 updateChecklist();
 
 // ===== 맨 위로 가기 버튼 =====
-const backToTopBtn = document.getElementById("backToTopBtn");
+window.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("backToTopBtn");
+    if (!btn) return;
 
-// 스크롤하면 버튼 나타나기
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    backToTopBtn.style.display = "flex";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-});
+    const backToTopBtn = document.getElementById("backToTopBtn");
 
-// 버튼 누르면 최상단으로 이동
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+    window.addEventListener("scroll", () => {
+        backToTopBtn.style.display = window.scrollY > 400 ? "flex" : "none";
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });
