@@ -1193,7 +1193,30 @@ footer {
     font-size: 10px;
   }
 }
+/* ===== 모바일 전용 레이아웃 조정 ===== */
+@media (max-width: 768px) {
+  /* 1) HERO 버튼 영역: 2 x 2 그리드로 (최대 4칸 느낌) */
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
 
+  /* 2) 디지털 탄소란? 개념 카드 – 모바일에서도 3열 유지 */
+  #intro .concept-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* 3) 개념 카드 본문 설명은 모바일에서 숨김 (아이콘 + 제목만) */
+  #intro .concept-body {
+    display: none;
+  }
+
+  /* 4) 카드뉴스형 설명(info-grid)는 모바일에서 숨김 */
+  #intro .info-grid {
+    display: none;
+  }
+}
 /* 아주 작은 화면(가로 420px 이하) 추가 튜닝 */
 @media (max-width: 420px) {
   .hero-title {
@@ -1218,4 +1241,5 @@ footer {
     font-size: 12px;
   }
 }
+
 
