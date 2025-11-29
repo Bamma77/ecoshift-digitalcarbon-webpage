@@ -318,6 +318,15 @@ header {
   .btn {
     font-size: 11px;
   }
+    /* 2) 개념 카드 모바일에서 숨김 */
+  #intro .concept-grid {
+    display: none;
+  }
+
+  /* 3) 개념 카드 모바일에서 숨김 */
+  #intro .concept-body {
+    display: none;
+  }
 }
 .hero-preview-title {
   font-size: 12px;
@@ -1230,19 +1239,6 @@ footer {
   }
 }
 /* ===== 모바일 전용 레이아웃 조정 ===== */
-@media (max-width: 768px) {
-  /* 1) HERO 버튼 영역: 2 x 2 그리드로 (최대 4칸 느낌) */
-  .hero-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-  }
-
-  /카드뉴스형 설명(info-grid)는 모바일에서 숨김 */
-  #intro .info-grid {
-    display: none;
-  }
-}
 /* 아주 작은 화면(가로 420px 이하) 추가 튜닝 */
 @media (max-width: 420px) {
   .hero-title {
@@ -1267,6 +1263,7 @@ footer {
     font-size: 12px;
   }
 }
+
 
 
 
