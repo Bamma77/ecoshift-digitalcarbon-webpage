@@ -361,25 +361,7 @@ header {
 
 @media (max-width: 600px) {
   .menu-grid {
-    grid-template-columns: minmax(4, minmax(0, 1fr));
-  }
-}
-
-/* 기본값: 모바일 문구 숨김 */
-.mobile-only {
-  display: none;
-}
-.pc-only {
-  display: block;
-}
-
-/* 모바일(600px 이하)에서는 모바일 문구만 보이고 PC 문구 숨김 */
-@media (max-width: 600px) {
-  .pc-only {
-    display: none;
-  }
-  .mobile-only {
-    display: block;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -1230,5 +1212,3 @@ footer {
     font-size: 12px;
   }
 }
-
-
