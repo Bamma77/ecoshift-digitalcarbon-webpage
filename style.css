@@ -361,7 +361,7 @@ header {
 
 @media (max-width: 600px) {
   .menu-grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(4, minmax(0, 1fr));
   }
 }
 
@@ -1230,4 +1230,5 @@ footer {
     font-size: 12px;
   }
 }
+
 
