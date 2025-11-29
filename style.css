@@ -152,29 +152,23 @@ header {
   border-bottom: 1px solid rgba(55, 65, 81, 0.6);
 }
 
-.header-title {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header-title:hover {
-  color: #6ee7b7;
-  /* 살짝 밝아지는 초록 강조 효과 */
-}
-
+/* 헤더 전체 레이아웃 */
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
+  gap: 8px;
 }
 
+/* 왼쪽: 로고 + 타이틀 + 메뉴 */
 .header-left {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
+/* 로고 박스 */
 .logo-box {
   width: 30px;
   height: 30px;
@@ -187,18 +181,27 @@ header {
   font-size: 16px;
 }
 
+/* 프로젝트 타이틀 (홈으로 이동 링크) */
 .header-title {
   font-size: 13px;
   font-weight: 600;
   color: #e5e7eb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.header-title:hover {
+  color: #6ee7b7;
+}
+
+/* 오른쪽: 학교/프로젝트 텍스트 */
 .header-right {
   font-size: 11px;
   color: #9ca3af;
   text-align: right;
 }
 
+/* 네비게이션 링크 */
 .nav-links {
   display: flex;
   gap: 12px;
@@ -212,6 +215,36 @@ header {
 
 .nav-links a:hover {
   color: #6ee7b7;
+}
+
+/* ===== 헤더 모바일 최적화 ===== */
+@media (max-width: 640px) {
+  .header-inner {
+    /* 한 줄 안에서 좌: 로고+타이틀, 우: 학교 텍스트 */
+    align-items: flex-start;
+  }
+
+  .header-left {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .header-right {
+    flex-shrink: 0;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  /* 메뉴는 아래 줄로 내려가면서 랩핑 */
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
 }
 
 /* ===== 홈(Hero) ===== */
@@ -279,8 +312,11 @@ header {
 @media (max-width: 768px) {
   .hero-buttons {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 8px;
+  }
+  .hero {
+    font-size: 11px;
   }
 }
 .hero-preview-title {
@@ -1202,17 +1238,7 @@ footer {
     gap: 8px;
   }
 
-  /* 2) 디지털 탄소란? 개념 카드 – 모바일에서도 3열 유지 */
-  #intro .concept-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  /* 3) 개념 카드 본문 설명은 모바일에서 숨김 (아이콘 + 제목만) */
-  #intro .concept-body {
-    display: none;
-  }
-
-  /* 4) 카드뉴스형 설명(info-grid)는 모바일에서 숨김 */
+  /카드뉴스형 설명(info-grid)는 모바일에서 숨김 */
   #intro .info-grid {
     display: none;
   }
@@ -1241,5 +1267,6 @@ footer {
     font-size: 12px;
   }
 }
+
 
 
